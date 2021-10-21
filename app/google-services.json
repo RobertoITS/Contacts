@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "276828744682",
+    "project_id": "trabajo-practico-b7699",
+    "storage_bucket": "trabajo-practico-b7699.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276828744682:android:d2ce7ed5cccdacaba96093",
+        "android_client_info": {
+          "package_name": "com.roberto.contacts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276828744682-muhp1jeoq1b3kp27rq0c06uusoqd6sb5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqADPjuJKpSdqc77fvdA3caoN9sesmGac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "276828744682-muhp1jeoq1b3kp27rq0c06uusoqd6sb5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
