@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         recycler.adapter = adapter
 
         val list: MutableList<Contacts> = mutableListOf<Contacts>()
-        list.add(Contacts("https://www.google.com/url?sa=i&url=https%3A%2F%2Frap.fandom.com%2Fes%2Fwiki%2FCanserbero&psig=AOvVaw2K_oWBcZWAyhql5hm7tMCN&ust=1634923812963000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLjT-eOD3PMCFQAAAAAdAAAAABAD",
+        list.add(Contacts("https://static.wikia.nocookie.net/rap/images/5/5f/Canserbero_1.jpg/revision/latest/scale-to-width-down/1000?cb=20190324221912&path-prefix=es",
                         "Cancerbero", "123456"))
 
         adapter.setListData(list)
