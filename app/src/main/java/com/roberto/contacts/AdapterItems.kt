@@ -1,4 +1,4 @@
-package com.roberto.contacts.adapters
+package com.roberto.contacts
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,8 +7,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.roberto.contacts.R
-import kotlin.coroutines.coroutineContext
 
 //val dataSet: ArrayList<String>//
 class AdapterItems(private val context: Context): RecyclerView.Adapter<AdapterItems.ViewHolder>() {
@@ -20,7 +18,8 @@ class AdapterItems(private val context: Context): RecyclerView.Adapter<AdapterIt
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.card_contact,
+        val view = LayoutInflater.from(parent.context).inflate(
+            R.layout.card_contact,
             parent, false)
 
         return ViewHolder(view)

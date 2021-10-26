@@ -1,10 +1,8 @@
-package com.roberto.contacts.data
+package com.roberto.contacts
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.ktx.Firebase
-import com.roberto.contacts.adapters.Contacts
 
 class Repo {
 
@@ -12,11 +10,16 @@ class Repo {
 
         val dataMutable = MutableLiveData<MutableList<Contacts>>()
         FirebaseFirestore.getInstance().collection("Contacs").get().addOnSuccessListener { result ->
+            val listData = mutableListOf<Contacts>()
             for (documents in result){
-                val imageURL =
+                val imageURL = documents.getString("imageURL")
+                val name = documents.getString("name")
+                val number = documents.getString("number")
+                val contact = Contacts(imageURL!!, name!!, number!!)
+                listData.add(contact)
             }
+            dataMutable.value = listData
         }
-
+        return dataMutable
     }
-
 }

@@ -1,10 +1,9 @@
-package com.roberto.contacts.viewmodel
+package com.roberto.contacts
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.roberto.contacts.adapters.Contacts
-import com.roberto.contacts.data.Repo
+
 
 class MainViewModel: ViewModel() {
 
